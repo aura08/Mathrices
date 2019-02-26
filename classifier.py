@@ -123,7 +123,7 @@ def get_features_and_labels(frame):
     # Convert values to floats
     arr = np.array(frame, dtype=np.float)
 
-    # Use the last column as the target value
+    # Use the last column as the target value 
     X, y = arr[:, :-1], arr[:, -1]
     # To use the first column instead, change the index value
     #X, y = arr[:, 1:], arr[:, 0]
